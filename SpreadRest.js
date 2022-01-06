@@ -23,9 +23,11 @@ now we can use rest in sum function also if we dont know the arguments
 here's the example
 */
 
-function sums(a,b,c,...all){
-    return a+b+c+all;
+//REST OPERATOR
+function sums(a,b,c,...All/*REST Combined*/ ) {
+    console.log(...All/*Spread Divided*/);
+    return a+b+c;
 }
-console.log(sums(3,3,4,6,7,8));//output 3+3+4+6+7+8 = 31
+console.log(sums(3,3,4,6,7,8));//output 3+3+4 = 10
 
  
